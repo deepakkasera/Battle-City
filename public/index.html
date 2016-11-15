@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Battle - City</title>
+		<link type="text/css" rel="stylesheet" href="styles/battlecity.css" />
+	</head>
+	<body>
+		 <div id="main">
+		 </div>
+		 <audio id="background" hidden loop volume="0.3">
+		    <source src="/sounds/background.mp3" type="audio/mpeg">
+		 </audio>
+		 <audio id="move" hidden>
+		    <source src="/sounds/move.mp3" type="audio/mpeg">
+		 </audio>
+		 <audio id="fire" hidden>
+		    <source src="/sounds/fire.mp3" type="audio/mpeg">
+		 </audio>
+		 <script type="text/javascript" src="lib/jquery.js"></script>
+		 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		 <script type="text/javascript" src="js/battlecity.js"></script>
+		 <script id="tankTemplate" type="text/template">
+		 	<img src='/images/ship.png' />
+		 	<span purpose="name" name=""></span>
+		 </script>
+	</body>
+</html>
